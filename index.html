@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pelis-mar</title>
+        <style type="text/css">
+
+            
+  
+            
+    
+      
+            header {
+                background:rgba(119, 126, 228, 0);
+                color:rgb(7, 218, 255);
+                width:0%;
+            }
+            
+            input#abrir-cerrar {
+                visibility:hidden;
+                position: absolute;
+                top: -9999px;
+            }
+            
+            
+            label[for="abrir-cerrar"] {
+                cursor:pointer;
+                padding: 1rem;
+                background-color:#333;
+                color:#fff;
+                display:inline-block;
+                width:100%;
+            
+            }
+            
+            .cerrar {
+                display:none;
+            }
+            
+            #sidebar {
+                width:0;
+            }
+            
+            #contenido {
+                margin-left:4;
+            }
+            
+            input#abrir-cerrar:checked ~ #sidebar {
+                width:230px;
+            }
+            
+            input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+                margin-left:300px;
+                transition: margin-left .4s;
+            }
+            
+            
+            input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+                display:inline;
+            }
+            
+            input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+                display:none;
+            }
+            
+            .sidebar {
+                position: fixed;
+                height: 100%;
+                width: 0;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                background-color: #ff0000;
+                overflow-x: hidden;
+                transition: 0.4s;
+                padding: 1rem 0;
+                box-sizing:border-box;
+            }
+            
+            .sidebar .boton-cerrar {
+                position: absolute;
+                top: 0.5rem;
+                right: 1rem;
+                font-size: 2rem;
+                display: block;
+                padding: 0;
+                line-height: 1.5rem;
+                margin: 0;
+                height: 32px;
+                width: 32px;
+                text-align: center;
+                vertical-align: top;
+            }
+            
+            .sidebar ul, .sidebar li{
+                margin:0;
+                padding:0;
+                list-style:none inside;
+            }
+            
+            .sidebar ul {
+                margin: 4rem auto;
+                display: block;
+                width: 80%;
+                min-width:200px;
+            }
+            
+            .sidebar a {
+                display: block;
+                font-size: 120%;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                
+            }
+            
+            .sidebar a:hover{
+                color:rgb(0, 0, 0);
+                background-color:#ffffff255, 153, 0);
+            
+            }
+            
+            h1 {
+                color:rgb(0, 0, 0);
+                font-size:190%;
+                font-weight:normal;
+            }
+            #contenido {
+                transition: margin-left .4s;
+                padding: 1rem;
+            }
+            
+            .abrir-cerrar {
+                color: #000000;
+                font-size:677rem;   
+            }
+        <style>
+       
+p {background-color: rgb(255, 0, 0);margin-bottom: .15em;font-family: arial,helvetica,sans-serif; }
+
+body {background-image: url(https://e7.pngegg.com/pngimages/327/703/png-clipart-cinema-film-moveis-logo-film.png);font-style: bottom center;
+
+background-color: rgb(179, 73, 73);}
+p {font-size: 16pt; color: rgb(0, 0, 0); text-indent: 2em; font-family: arial,sans-serif;}
+.dark {font-weight: bold; }
+</style>
+
+
+</head>
+
+            
+            
+            </head>
+            <body>
+                <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+                <label for="abrir-cerrar">&#9798; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span></label>
+                <div id="sidebar" class="sidebar">
+                    <ul class="menu">
+                        <li><a href=>Que pelicula quieres ver?</a></li>
+                            <li><a href="https://ver.cuevana.pro/peliculas/comedia">Comedia</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/terror">Terror</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/accion">Accion</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/animacion">Aminacion</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/anime">Anime</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/aventura">Aventura</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/belica">Belica</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/biografia">Biografia</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/ciencia-ficcion">Ciencia-ficcion</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/cortometrajes">Cortometrajes</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/crimen">Crimen</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/dc-comics">Comics</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/deportes">Deportes</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/disney">Disney</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/misterio">Misterio</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/musical">Musical</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/navidad">Navidad</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/news">News</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/occidental">Occidental</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/reality-tv">Reality-TV</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/romance">Romance</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/suspenso">Suspeno</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/thriller">Thriller</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/western">Western</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/historia">Historia</a></li>
+                            <li><a href="https://www2.cuevana.pro/peliculas/infantil">Infaltil</a></li>
+                            
+                        
+                                </div>
+                    <div id="contenido">
+                        
+     <nav>
+       <ul>
+         <li><a href="https://www2.cuevana.pro/peliculas">Peliculas</a></li>
+         <li><a href="https://www2.cuevana.pro/series">Series</a></li>
+         <li><a href="https://www2.cuevana.pro/peliculas/estrenos">Estrenos</a></li>
+       </ul>
+     </nav>
+   </header>
+ </body>
+ <body>
+     </div>
+     <br>
+     <br>
+     <br>
+     «Copyright [2022] por [_Pelis-mar_]»
+</body> 
+                            <img src="WhatsApp Image 2022-09-25 at 1.56.49 PM.jpeg" alt="Pelis mar" style="border-width: 800px" /></a></p>
+                            <style>
+                                
+                            *{
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: top;
+                             }
+                       
+                             header{
+                               background-color: rgba(219, 5, 5, 0.882);
+                             }
+                       
+                             #logo{
+                               margin: auto;
+                               height: 150px;
+                               width: 390px;
+                               text-align: center;
+                             }
+                       
+                             #logo h1{
+                                font-family: 'Pacifico', cursive;
+                                font-size: 60px;
+                              }
+                       
+                            nav{
+                              height: 70px;
+                              background-color:#000000;
+                              text-align: center;
+                            }
+                       
+                            nav ul{
+                               list-style: none;
+                               display: inline-block;
+                               padding:12px;
+                            }
+                       
+                            nav ul li{
+                                float: left;
+                                margin-top: 10px;
+                            }
+                       
+                            nav ul li a {
+                                color: rgba(255, 0, 0, 0.882);
+                                font-weight: bold;
+                                text-decoration: none;
+                                font-size: 25px;
+                                padding: 28px;
+                            }
+                       
+                            nav ul li a:hover{
+                              background-color: rgb(255, 123, 0);
+                            }
+                        </style>
+                        <body>
+                            
+                            <p>Llene este Formulario para Ayudarnos a Mejorar Nuestro Sitio</p>
+                            <form method="post" action="http://www.google.com">
+                                <input type="hidden" name="Destinatario" value="mailto:herreracascantemarcel@gmail.com">
+                                <input type="hidden" name="Asunto" value="Formulario de retroalimentación">
+                                <input type="hidden" name="Redirigir" value="principal.html">
+                                <p><label>Nombre:<input name="Nombre" type="Text" size="25" mxlength="30"></label></p>
+                                <p><label>Comentarios:<br><textarea name="Comentarios" rows ="4" cols="36">Escriba aquí los comentarios</textarea></label></p>
+                                <p><label>Correo:<input name="Correo" type="password" size="25" mxlength="30"></label></p>
+                                <p><strong>Cosas que te gustaron</strong></p><label>Diseño del sitio:<input name="cosasgustaron" type="checkbox" value="Diseño"></label></p>
+                                <p><label>Vinculos:<input name="cosasgustaron" type="checkbox" value="Vinculos"></label></p>
+                                <p><label>Facilidad de uso:<input name="cosasgustaron" type="checkbox" value="Facilidad de uso"></label></p>
+                                <p><label>Imagenes:<input name="cosasgustaron" type="checkbox" value="Imagenes"></label></p>
+                                <p><label>Codigo de fuente:<input name="cosasgustaron" type="checkbox" value="Codigo de fuente"></label></p>
+                                <p><label>Califique Nuestro Sitio: <select name="calificación"><option selected>Sorprendente</option>
+                                <option>10</option>
+                                <option>9</option>
+                                <option>8</option>
+                                <option>7</option>
+                                <option>6</option>
+                                <option>5</option>
+                                <option>4</option>
+                                <option>3</option>
+                                <option>2</option>
+                                <option>1</option>
+                                <option>Malo</option></select></label></p>
+                                <p><input type="Submit" value="Enviar"><input type="reset" value="Borrar"></p>
+                            <p>
+                                Toda la informacion tiene &copy
+                            </p>
+                        </body>
+                      
